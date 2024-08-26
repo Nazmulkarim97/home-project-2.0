@@ -11,6 +11,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/473bd6d142.js" crossorigin="anonymous"></script>
+    <!-- manripe text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind config -->
     <script>
         tailwind.config = {
@@ -18,20 +22,29 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'bg-color': '#F4F4F4',
+                'btn-brand': '#ABEF5F',
+                'btn-brand-2': 'rgba(171, 239, 95, 0.5)',
+
               }
             }
           }
         }
       </script>
+      <style>
+        .manrope-text-font{
+            font-family: "Manrope", sans-serif;
+        }
+      </style>
     
 </head>
 <body>
 
-<header>
+<header class=" pt-8 manrope-text-font lg:container mx-auto bg-gradient-to-b from-bg-color to-white">
  <!-- navbar start -->
 
- <div class="navbar bg-base-100">
-    <div class="navbar-start">
+ <div class="navbar justify-between lg:px-36 ">
+    <div class="">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg
@@ -50,63 +63,65 @@
         <ul
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
+          <li><a>Home</a></li>
+        <li><a>Services</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Contact Us</a></li>
       </div>
-      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <a class="btn btn-ghost text-xl font-extrabold"><i class="bg-btn-brand  rounded-full -rotate-45 fa-solid fa-arrow-right-long p-1.5"></i> Rinterio</a>
     </div>
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Item 1</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Item 3</a></li>
+      <ul class="menu menu-horizontal px-1 text-[#737373] hover:text-black hover:font-extrabold">
+        <li><a>Home</a></li>
+      </ul>
+      <ul class="menu menu-horizontal px-1 text-[#737373] hover:text-black hover:font-extrabold">
+        <li><a>Services</a></li>
+      </ul>
+      <ul class="menu menu-horizontal px-1 text-[#737373] hover:text-black hover:font-extrabold">
+        <li><a>Portfolio</a></li>
+      </ul>
+      <ul class="menu menu-horizontal px-1 text-[#737373] hover:text-black hover:font-extrabold">
+        <li><a>Blogs</a></li>
+      </ul>
+      <ul class="menu menu-horizontal px-1 text-[#737373] hover:text-black hover:font-extrabold">
+        <li><a>Contact Us</a></li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
+    <div class="">
+        <div class="bg-white rounded-full w-10 h-10 p-3 ">
+            <i class="fa-solid fa-magnifying-glass w-6 h-6 text-[#737373]"></i>
+        </div>
+        <div class="bg-white rounded-full w-10 h-10 p-3 mx-3">
+            <i class="fa-solid fa-cart-shopping w-6 h-6 text-[#737373]"></i>
+        </div>
+      <a class="btn bg-btn-brand rounded-full font-extrabold">Book Consult<i class="bg-black rounded-full -rotate-45 fa-solid fa-arrow-right-long text-white p-1.5"></i></a>
     </div>
   </div>
 
 
   <!-- Banner start -->
 
-  <div class="hero bg-base-200 min-h-screen">
+  <div class="banner mx-auto my-6 lg:px-36 ">
     <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="text-5xl font-bold">Hello there</h1>
-        <p class="py-6">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-          quasi. In deleniti eaque aut repudiandae et a id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
+      <div class="">
+            <img src="./assets/banner.png" alt="" class="mx-auto">
+            <h1 class="text-3xl md:text-5xl font-extrabold md:mt-10">A barn house of this design has a striking appearance<h1>
+            <p class="py-6 md:mt-5">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class=" md:mt-5 btn bg-btn-brand-2 rounded-full font-bold">View Details<i class="bg-btn-brand  rounded-full -rotate-45 fa-solid fa-arrow-right-long p-1.5"></i></button>
       </div>
     </div>
   </div>
 
 </header>
 
-<main>
+<main class="manrope-text-font">
 
 
 </main>
 
-<footer>
+<footer class="manrope-text-font">
 
 
 </footer>
